@@ -30,11 +30,11 @@ class HiddenPrints:
 
 if __name__ == '__main__':
     try:
-        pwds = ''
+        pwd = ''
         total = 4
         print(f"请新娘设置金库{total}位密码：")
         for i in range(total):
-            pwds += read_password(f"第{i + 1}位")
+            pwd += read_password(f"第{i + 1}位")
         print("设置完成，密码已保存至`pwds`中!!!")
     except (KeyboardInterrupt, EOFError) as err:
         pass
@@ -51,12 +51,12 @@ if __name__ == '__main__':
                     with HiddenPrints():
                         import pdb
                         pdb.set_trace()
-                        if guess == pwds:
+                        if guess == pwd:
                             break
             except (KeyboardInterrupt, EOFError, BdbQuit) as err:
                 continue
             else:
                 print(f"恭喜求解完成{'!'*(i+1)}")
-                print(f"密码是：{pwds}")
+                print(f"密码是：{pwd}")
                 break
 
