@@ -40,7 +40,7 @@ if __name__ == '__main__':
         pass
     else:
         print(f"\n\n新郎求解金库{total}位密码：")
-        print(f"并将结果按位存到`answer`变量中；输入`c`回车检查")
+        print(f"并将结果按位存到`answer`变量中")
         answer = ''
         __counter = 0
         while True:
