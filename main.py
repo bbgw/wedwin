@@ -31,7 +31,7 @@ class HiddenPrints:
 if __name__ == '__main__':
     try:
         pwd = ''
-        total = 4
+        total = 3
         print(f"请新娘设置金库{total}位密码：")
         for i in range(total):
             pwd += read_password(f"第{i + 1}位")
