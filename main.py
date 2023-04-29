@@ -35,7 +35,7 @@ if __name__ == '__main__':
         print(f"请新娘设置金库{total}位密码：")
         for i in range(total):
             pwd += read_password(f"第{i + 1}位")
-        print("设置完成，密码已保存至`pwds`中!!!")
+        print("设置完成，密码已保存至`pwd`中!!!")
     except (KeyboardInterrupt, EOFError) as err:
         pass
     else:
