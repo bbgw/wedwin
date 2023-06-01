@@ -32,14 +32,14 @@ if __name__ == '__main__':
     try:
         pwd = ''
         total = 3
-        print(f"请新娘设置金库{total}位密码：")
+        print(f"请设置金库{total}位密码：")
         for i in range(total):
             pwd += read_password(f"第{i + 1}位")
         print("设置完成，密码已保存至`pwd`中!!!")
     except (KeyboardInterrupt, EOFError) as err:
         pass
     else:
-        print(f"\n\n!!!新郎求解金库{total}位密码!!!")
+        print(f"\n\n!!!求解金库{total}位密码!!!")
         print(f"将猜测存到`guess`变量中")
         guess = ''
         __counter = 0
